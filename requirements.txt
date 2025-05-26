@@ -1,0 +1,5 @@
+skpm @ git+https://github.com/raseidi/skpm.git@7c35b6b#egg=skpm
+peft==0.14.0
+torch==2.6.0
+transformers==4.49.0
+wandb==0.19.8

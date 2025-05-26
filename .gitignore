@@ -1,0 +1,11 @@
+data/
+.venv/
+.vscode/
+wandb/
+__pycache__/
+log_slurm/
+persisted_models/
+tests/
+
+.env
+*.pth
