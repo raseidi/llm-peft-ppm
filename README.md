@@ -6,7 +6,7 @@
 
 * This repo has code and scripts to fine-tune large language models (LLMs) for multi-task PPM.
 * We use [uv](https://docs.astral.sh/uv/guides/install-python/) to manage our local environment.
-* Tested only on Ubuntu 24.04 using python 3.12.
+* Tested only on Ubuntu 24.04 using Python 3.12.
 
 ## Requirements
 
@@ -68,13 +68,13 @@ python next_event_prediction.py \
 
 **LLM fine-tuning**
 
-In order to use LLMs, you need a [HuggingFace token](https://huggingface.co/docs/hub/en/security-tokens). A few options of how to use it:
+In order to use LLMs, you need a [HuggingFace token](https://huggingface.co/docs/hub/en/security-tokens). A few options for how to use it:
 
 * Create an `.env` file in the root of this repository and write your token like `HF_TOKEN=<YOUR_TOKEN>`
 * Export a local variable `export HF_TOKEN="<YOUR_TOKEN>"`
-* Hard code it [here](https://github.com/raseidi/llm-peft-ppm/blob/61d92a1aba81fd710bf37851862e3386b41816c4/ppm/models/models.py#L13)
+* Hard code it [here](https://github.com/raseidi/llm-peft-ppm/blob/ceb46b533d2d3154315ef008e4c6df9ddc988e14/ppm/models/models.py#L13)
 
-For local debugging purposes, try the tiny setup below with a small `r` value for `BPI20PrepaidTravelCosts` and `qwen25-05b`. If it doens't fit your GPU memory, keep decreasing the `batch_size` (=4 uses less than 2gb). 
+For local debugging purposes, try the tiny setup below with a small `r` value for `BPI20PrepaidTravelCosts` and `qwen25-05b`. If it doesn't fit your GPU memory, keep decreasing the `batch_size` (=4 uses less than 2gb). 
 
 ```bash
 python next_event_prediction.py \
