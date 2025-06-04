@@ -29,8 +29,8 @@ uv pip install -r requirements.txt
 │   └── *.slurm                     
 ├── notebooks/                      # Analysis notebooks
 ├── ppm/                            # Source code
-├── luijken_transfer_learning.py    # Main training script
-├── next_event_prediction.py        # Competitor training script
+├── luijken_transfer_learning.py    # Competitor training script
+├── next_event_prediction.py        # Main training script
 ├── requirements.txt                # Python dependencies
 └── README.md                       # This file
 ```
