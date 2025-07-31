@@ -1,5 +1,8 @@
-skpm @ git+https://github.com/raseidi/skpm.git@7c35b6b#egg=skpm
+skpm @ git+https://github.com/raseidi/skpm.git
 peft==0.14.0
 torch==2.6.0
-transformers==4.49.0
+transformers==4.53.2
 wandb==0.19.8
+pydantic==2.11.5
+torchmetrics==1.7.4
+datasets==4.0.0
