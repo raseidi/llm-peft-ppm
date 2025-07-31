@@ -30,6 +30,7 @@ uv pip install -r requirements.txt
 ├── notebooks/                      # Analysis notebooks
 ├── ppm/                            # Source code
 ├── luijken_transfer_learning.py    # Competitor training script
+├── rebmann_et_al.py                # Narrative-style competitor training script
 ├── next_event_prediction.py        # Main training script
 ├── requirements.txt                # Python dependencies
 └── README.md                       # This file
@@ -68,7 +69,7 @@ python next_event_prediction.py \
 
 **LLM fine-tuning**
 
-In order to use LLMs, you need a [HuggingFace token](https://huggingface.co/docs/hub/en/security-tokens). A few options for how to use it:
+In order to use LLMs, you need a [HuggingFace token](https://huggingface.co/docs/hub/en/security-tokens). A few options on how to use it:
 
 * Create an `.env` file in the root of this repository and write your token like `HF_TOKEN=<YOUR_TOKEN>`
 * Export a local variable `export HF_TOKEN="<YOUR_TOKEN>"`
@@ -98,11 +99,11 @@ Alternatively, use the argument `--wandb` to enable wandb.
 
 ### Hyperparameter search
 
-We used Slurm on our HPC clusters. Check `scripts/*.sh`, `scripts/*.txt`, and `scripts/*.slurm` to see how to reproduce our jobs.
+We used Slurm on our HPC clusters. Check `scripts/*.sh`, `scripts/*.txt`, and `scripts/*.slurm` to see how to reproduce our jobs or run other configurations locally.
 
 ## Results
 
-All metrics and analysis notebooks are in the `notebooks/` folder.
+All metrics and analysis notebooks are in the `notebooks/` folder. Check [this notebook](notebooks/results.ipynb) for plots that have not fit in the paper.
 
 ## Contact
 
